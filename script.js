@@ -5,6 +5,7 @@ kits.forEach((kits) => {
   btnEl.classList.add("btn");
   btnEl.innerText = kits;
   btnEl.style.backgroundImage = "url( drums/" + kits + ".png)";
+  btnEl.style.backgroundRepeat = "no-repeate";
   containerEl.appendChild(btnEl);
   const audioEl = document.createElement("audio");
   audioEl.src = "sounds/" + kits + ".mp3";
